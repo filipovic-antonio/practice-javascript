@@ -1,0 +1,13 @@
+.li {
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top:1rem;
+    color: black;
+    background-color:lightgrey;
+    font-size: 2rem;
+    display:flex;
+    flex-direction: column;
+    width:fit-content
+}
