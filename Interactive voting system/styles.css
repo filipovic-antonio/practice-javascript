@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:aqua;
+}
+
+.cointener {
+    margin: 2rem;
+}
+
+table {
+    cursor: pointer;
+    margin: 2rem;
+}
+
+tr:hover {
+    opacity: 0.5;
+}
+
+.button {
+    border-radius: 1rem;
+    padding:0.5rem;
+}
+
+.inputName {
+    border-radius: 1rem;
+    padding:0.5rem;
+}
+
+td {
+    padding: 0.2rem;
+}
