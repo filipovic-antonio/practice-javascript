@@ -1,0 +1,29 @@
+.output {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top:50px;
+    left:20%;
+    background-color: red;
+}
+
+.message {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-size:5rem;
+}
