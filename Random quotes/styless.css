@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    background-color: aqua;
+}
+
+.cointener {
+    display:flex;
+    height: 90vh;
+    width: 950px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes {
+    border: 2rem solid #f4edea;
+    background-color: #f4d1ae;
+    width: 60rem;
+    height: 50rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.quotes p, .quotes h3 {
+    font-size: 2rem;
+}
+
+@media(max-width:400px) {
+    .quotes p, .quotes h3 {
+        font-size: 1rem;
+    }
+}
+
+.button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 4rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+
+
+
