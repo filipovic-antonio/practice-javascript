@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.cointener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.message {
+    background-color: antiquewhite;
+    padding:2rem 2rem;
+    font-size: 2rem;
+}
+
+#messageOutput {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#messageInput {
+    padding:0.5rem 0.5rem;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.2rem;
+    padding:0.3rem;
+}
