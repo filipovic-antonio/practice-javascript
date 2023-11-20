@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: yellow;
+}
+
+.cointener {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cointenerCounter {
+    border: 0.2rem solid black;
+    padding: 6rem 15rem;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 8rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+}
+
+h2 {
+    text-align: center;
+}
