@@ -11,13 +11,27 @@ const currentScore0 = document.querySelector('#current--0');
 const currentScore1 = document.querySelector('#current--1');
 
 //Starting conditions
-score0El.textContent = 0;
-score1El.textContent = 0;
-diceEl.classList.add('hidden');
+let scores, currentScore, activePlayer, playing;
 
-const scores = [0, 0];
-let currentScore = 0;
-let activePlayer = 0;
+ const init = function() {
+
+    scores = [0, 0];
+    currentScore = 0;
+    activePlayer = 0;
+    playing = true; 
+
+    currentScore0.textContent = 0;
+    currentScore1.textContent = 0;
+    score0El.textContent = 0;
+    score1El.textContent = 0;
+
+    diceEl.classList.add('hidden');
+    player0El.classList.remove('player--winner');
+    player1El.classList.remove('player--winner');
+    player0El.classList.add('player--active');
+    player1El.classList.remove('player--active');
+ }
+ init();
 
 const switchPlayer = function() {
     document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -29,6 +43,8 @@ const switchPlayer = function() {
 
 // Rolling dice functionality
 btnRollDice.addEventListener('click', function() {
+    if(playing) {
+
     // Generating a random dice roll
     const dice = Math.trunc(Math.random() * 6) + 1;
 
@@ -45,25 +61,28 @@ btnRollDice.addEventListener('click', function() {
         //switch to next player
         switchPlayer();
     }
+}
 });
 btnHold.addEventListener('click', function() {
-
+    if(playing) {
     // 1. Add current score to active player's score
     scores[activePlayer] += currentScore;
     console.log(scores[activePlayer]);
     document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
 
     // 2. Check if players socre is >=100 
-    if(scores[activePlayer] >= 20) {
+    if(scores[activePlayer] >= 50) {
          //Finish game
+         playing = false;
+         diceEl.classList.add('hidden');
         document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
         document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
     } else {
         // Switch to another player
         switchPlayer();
     }
-       
-
-    
-    
+  }  
 });
+  // Button for New Game
+  btnNew.addEventListener('click',init)
+
