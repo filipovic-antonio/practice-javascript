@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+img {
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    align-self: center;
+    margin-top: 10px;
+}
